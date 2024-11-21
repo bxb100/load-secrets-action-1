@@ -41420,7 +41420,7 @@ class Account {
         if (!this.client) {
             this.client = await (0,sdk.createClient)({
                 auth: this.token,
-                integrationName: "1Password GitHub Action",
+                integrationName: "GitHub Action load-secrets-action",
                 integrationVersion: package_namespaceObject.rE,
             });
         }
@@ -41455,7 +41455,7 @@ async function resolve_by_path(client, path) {
         // how to deal with same label and id?
         const section = item.sections?.filter((s) => s.label === section_name || s.id === section_name);
         if (section && section.length > 0) {
-            item_fields = item_fields?.filter((f) => f.section?.id === section[0].id);
+            item_fields = item_fields?.filter((f) => f.section?.id === section[0]?.id);
         }
     }
     const filed = item_fields?.filter((f) => f.id === field_name || f.label === field_name)[0];

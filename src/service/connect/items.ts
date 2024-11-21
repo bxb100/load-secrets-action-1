@@ -33,7 +33,7 @@ export async function resolve_by_path(
 
 		if (section && section.length > 0) {
 			item_fields = item_fields?.filter(
-				(f) => f.section?.id === section[0]!.id,
+				(f) => f.section?.id === section[0]?.id,
 			);
 		}
 	}

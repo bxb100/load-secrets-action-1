@@ -21,7 +21,7 @@ export class Account implements ResolveSecretReference {
 		if (!this.client) {
 			this.client = await createClient({
 				auth: this.token,
-				integrationName: "1Password GitHub Action",
+				integrationName: "GitHub Action load-secrets-action",
 				integrationVersion: version,
 			});
 		}

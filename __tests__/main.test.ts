@@ -1,3 +1,5 @@
+/* eslint jest/expect-expect: ["error", { "assertFunctionNames": ["expect", "commonCheck"] }] */
+
 import * as core from "@actions/core";
 import * as main from "../src/main";
 import * as op from "@1password/sdk";
