@@ -8,6 +8,7 @@
 		"test": "tests"
 	},
 	"scripts": {
+		"bundle": "npm run format:write && npm run build",
 		"build": "ncc build ./src/index.ts",
 		"format": "prettier --ignore-path ./config/.prettierignore",
 		"format:check": "npm run format -- --check ./",
