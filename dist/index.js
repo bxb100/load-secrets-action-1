@@ -41434,7 +41434,10 @@ class Account {
 
 // EXTERNAL MODULE: ./node_modules/@1password/connect/dist/index.js
 var dist = __nccwpck_require__(4088);
+// EXTERNAL MODULE: ./node_modules/@1password/connect/dist/lib/op-connect.js
+var op_connect = __nccwpck_require__(6534);
 ;// CONCATENATED MODULE: ./src/service/connect/items.ts
+
 /**
  * `op://<vault-name>/<item-name>/[section-name/]<field-name>`
  */
@@ -41463,6 +41466,7 @@ async function resolve_by_path(client, path) {
 }
 
 ;// CONCATENATED MODULE: ./src/service/connect/index.ts
+
 
 
 
